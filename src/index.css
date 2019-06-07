@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Oxygen&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +7,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 1.5rem;
+  background-color: #867979;
+}
+h1,
+h2,
+h3,
+i {
+  margin: 0;
+  padding: 0;
+}
+select {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: "Oxygen", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.main-container {
+  min-width: 95vw;
+  background-color: lightgray;
+}
+.menu-container {
+  background-color: #b34d4d;
+  padding: 1rem;
+  width: auto;
+  display: grid;
+  grid-template-columns: 60% 30% 1fr;
+  /* grid-template-rows: 30px; */
+  grid-column-gap: 20px;
+  color: whitesmoke;
+}
+.menu-item {
+  font-size: 22px;
+}
+.menu-item-end {
+  text-align: end;
+}
+
+.content-container {
+  min-height: 90vh;
+  border-radius: 20px;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 25px;
+  grid-column-gap: 25px;
+}
+.content-item {
+  display: grid;
+  grid-gap: 35px;
+  background-color: #eaf8f5;
+  padding: 1rem;
+  border-radius: 15px;
+  grid-template-rows: 45px 1fr;
+}
+.content-droppable {
+  padding: 0px 20px;
+  min-height: 65vh;
+  max-height: 500px;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.content-droppable::-webkit-scrollbar {
+  display: none;
+}
+
+.content-draggable {
+  margin: 20px 0px;
 }
